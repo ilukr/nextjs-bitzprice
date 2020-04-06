@@ -1,12 +1,15 @@
 {
   "name": "bitzprice",
+  "homepage": "https://ilukr.github.io/nextjs-bitzprice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
